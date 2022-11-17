@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urso em Gif</title>
+    <style type="text/css">
+        html, body{
+            margin: 0px;
+            padding: 0px;
+            background: url("cenario.png") no-repeat center center fixed;
+            background-size: cover;
+        }
+        body{
+            width: 100%;
+        }
+        .ursos {
+            display: none;
+            width: 150px;
+            position: absolute;
+            top: 570px;
+        }
+    </style>
+</head>
+<body>
+    <img src="urso-1.png" alt="Urso1" class="ursos" id="urso1"/>
+    <img src="urso-2.png" alt="Urso2" class="ursos" id="urso2"/>
+    <img src="urso-3.png" alt="Urso3" class="ursos" id="urso3"/>
+
+
+    <script type="text/javascript">
+    
+        var urso1 = document.getElementById("urso1");
+        var urso2 = document.getElementById("urso2");
+        var urso3 = document.getElementById("urso3");
+
+        var posicao = 0;
+        var contador = 0;
+
+        function Caminhar(){
+            contador += 1;
+            posicao += 15;
+
+            if (contador == 1) {
+                urso1.style.display = "block";
+                urso2.style.display = "none";
+                urso3.style.display = "none";
+
+                urso1.style.marginLeft = `${posicao}px`;
+            } else if (contador == 2) {
+                urso1.style.display = "none";
+                urso2.style.display = "block";
+                urso3.style.display = "none";
+
+                urso2.style.marginLeft = `${posicao}px`;
+            } else if (contador == 3) {
+                contador = 0;
+
+                urso1.style.display = "none";
+                urso2.style.display = "none";
+                urso3.style.display = "block";
+
+                urso3.style.marginLeft = `${posicao}px`;
+            }
+            
+        }setInterval(Caminhar, 300);
+
+    </script>
+</body>
+</html>
