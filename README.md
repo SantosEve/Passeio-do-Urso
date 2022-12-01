@@ -15,9 +15,11 @@ Posteriormente, defini as fotos utilizadas, a fim de que já sejam carregadas:<b
 ![Badge em Desenvolvimento](https://img.shields.io/badge/STATUS-Finalizado-ff69b4)
 
 # Principais tecnologias utilizadas:
-<img style="width:100px" style="display:Inline" src="https://user-images.githubusercontent.com/102689284/205044499-a4fec1f0-f23c-4051-b7d0-427ea775c0da.png">
-<img style="width:100px" style="display:Inline" src="https://user-images.githubusercontent.com/102689284/205044592-c449a56b-3fa9-4122-a6e0-6604b26aa7b3.png">
-<img style="width:100px" style="display:Inline" src="https://user-images.githubusercontent.com/102689284/205044643-4d3b21da-1adf-458e-8169-fe29a756416f.png">
+<div style="width:600px display:inline">
+<img style="width:40px display:inline-block" src="https://user-images.githubusercontent.com/102689284/205044499-a4fec1f0-f23c-4051-b7d0-427ea775c0da.png">
+<img style="width:40px display:inline-block" src="https://user-images.githubusercontent.com/102689284/205044592-c449a56b-3fa9-4122-a6e0-6604b26aa7b3.png">
+<img style="width:40px display:inline-block" src="https://user-images.githubusercontent.com/102689284/205044643-4d3b21da-1adf-458e-8169-fe29a756416f.png">
+</div>
  
 # Desenvolvido por:
 |[<img src="https://avatars.githubusercontent.com/u/102689284?v=4" width=115><br><sub>Evelyn dos Santos</sub>](https://github.com/SantosEve)<br><a href="https://www.linkedin.com/in/evelyn-dos-santos">Linkedin da Evelyn</a>| <br><br> | [<img src="https://avatars.githubusercontent.com/u/7065152?v=4"  width=115><br><sub>Carlos Severiano</sub>](https://github.com/cseveriano)<br><a href="https://www.linkedin.com/in/carlos-severiano-0117a12b">Linkedin do Professor e Desenvolvedor Carlos</a> <br><br> |
