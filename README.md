@@ -1,4 +1,4 @@
-:octocat:
+:octocat: :brazil:
 <div align="center"><b>#Passeio-do-Urso </b></div>
 <a href="https://pt.vecteezy.com/arte-vetorial/9955668-pixel-art-arcade-game-scene-with-life-bar-trees-board-and-clouds-8bit-background"></a>
 Atividade escolar: Desenvolver um código com JavaScript, HTML e CSS para fazer um urso andar, correr e pular.
@@ -19,7 +19,9 @@ Posteriormente, defini as fotos utilizadas, a fim de que já sejam carregadas:<b
 ![image width="20" height="30"](https://user-images.githubusercontent.com/102689284/205044592-c449a56b-3fa9-4122-a6e0-6604b26aa7b3.png)
 ![image width="20" height="30"](https://user-images.githubusercontent.com/102689284/205044643-4d3b21da-1adf-458e-8169-fe29a756416f.png)
 
-
 # Desenvolvido por:
-|[<img src="https://avatars.githubusercontent.com/u/102689284?v=4" width=115><br><sub>Evelyn dos Santos</sub>](https://github.com/SantosEve)| <br><br> | [<img src="https://avatars.githubusercontent.com/u/7065152?v=4"  width=115><br><sub>Carlos Severiano</sub>](https://github.com/cseveriano)|
+|[<img src="https://avatars.githubusercontent.com/u/102689284?v=4" width=115><br><sub>Evelyn dos Santos</sub>](https://github.com/SantosEve)<br><a href="https://www.linkedin.com/in/evelyn-dos-santos">Linkedin da Evelyn</a>| <br><br> | [<img src="https://avatars.githubusercontent.com/u/7065152?v=4"  width=115><br><sub>Carlos Severiano</sub>](https://github.com/cseveriano)<br><a href="https://www.linkedin.com/in/carlos-severiano-0117a12b">Linkedin do Professor e Desenvolvedor Carlos</a> <br><br> |
 | :---: | :---: | :---: |
+
+✉️
+Em caso de dúvidas, entre em contato pelo linkedin da Evelyn, disponibilizado anteriormente.
