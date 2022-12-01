@@ -15,8 +15,7 @@ Posteriormente, defini as fotos utilizadas, a fim de que já sejam carregadas:<b
 ![Badge em Desenvolvimento](https://img.shields.io/badge/STATUS-Finalizado-ff69b4)
 
 # Principais tecnologias utilizadas:
-<div position:"inline">
-<img style="width:100px" src="https://user-images.githubusercontent.com/102689284/205044499-a4fec1f0-f23c-4051-b7d0-427ea775c0da.png">
+<div position:"inline"><img style="width:100px" src="https://user-images.githubusercontent.com/102689284/205044499-a4fec1f0-f23c-4051-b7d0-427ea775c0da.png">
 <img style="width:100px" src="https://user-images.githubusercontent.com/102689284/205044592-c449a56b-3fa9-4122-a6e0-6604b26aa7b3.png">
 <img style="width:100px" src="https://user-images.githubusercontent.com/102689284/205044643-4d3b21da-1adf-458e-8169-fe29a756416f.png"></div>
 
