@@ -16,9 +16,9 @@ Posteriormente, defini as fotos utilizadas, a fim de que já sejam carregadas:<b
 
 # Principais tecnologias utilizadas:
 <div style="width:600px display:inline">
-<img style="width:40px display:inline-block" src="https://user-images.githubusercontent.com/102689284/205044499-a4fec1f0-f23c-4051-b7d0-427ea775c0da.png">
-<img style="width:40px display:inline-block" src="https://user-images.githubusercontent.com/102689284/205044592-c449a56b-3fa9-4122-a6e0-6604b26aa7b3.png">
-<img style="width:40px display:inline-block" src="https://user-images.githubusercontent.com/102689284/205044643-4d3b21da-1adf-458e-8169-fe29a756416f.png">
+<img src="https://user-images.githubusercontent.com/102689284/205044499-a4fec1f0-f23c-4051-b7d0-427ea775c0da.png">
+<img src="https://user-images.githubusercontent.com/102689284/205044592-c449a56b-3fa9-4122-a6e0-6604b26aa7b3.png">
+<img src="https://user-images.githubusercontent.com/102689284/205044643-4d3b21da-1adf-458e-8169-fe29a756416f.png">
 </div>
  
 # Desenvolvido por:
