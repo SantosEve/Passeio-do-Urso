@@ -1,4 +1,6 @@
+:octocat:
 <div align="center"><b>#Passeio-do-Urso </b></div>
+<a href="https://pt.vecteezy.com/arte-vetorial/9955668-pixel-art-arcade-game-scene-with-life-bar-trees-board-and-clouds-8bit-background"></a>
 Atividade escolar: Desenvolver um código com JavaScript, HTML e CSS para fazer um urso andar, correr e pular.
 
 # Principais seções da página:
@@ -10,7 +12,7 @@ Posteriormente, defini as fotos utilizadas, a fim de que já sejam carregadas:<b
 `<img src="urso-3.png" alt="Urso3" class="ursos" id="urso3"/>`
 
 # Status do projeto
-![Badge em Desenvolvimento].(https://img.shields.io/badge/STATUS-Finalizado-yellowgreen)
+![Badge em Desenvolvimento](https://img.shields.io/badge/STATUS-Finalizado-ff69b4)
 
 # Principais tecnologias utilizadas:
 ![image width="20" height="30"](https://user-images.githubusercontent.com/102689284/205044499-a4fec1f0-f23c-4051-b7d0-427ea775c0da.png)
