@@ -23,3 +23,4 @@ Posteriormente, defini as fotos utilizadas, a fim de que já sejam carregadas:
 # Desenvolvido por:
 |[<img src="https://avatars.githubusercontent.com/u/102689284?v=4" width=115><br><sub>Evelyn dos Santos</sub>](https://github.com/SantosEve)| <br><br> | [<img src="https://avatars.githubusercontent.com/u/7065152?v=4"  width=115><br><sub>Carlos Severiano</sub>](https://github.com/cseveriano)|
 | :---: | :---: | :---: |
+oi
