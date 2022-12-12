@@ -1,71 +1,146 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE HTML>
+<html lang="pt_BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urso em Gif</title>
-    <style type="text/css">
-        html, body{
-            margin: 0px;
-            padding: 0px;
-            background: url("cenario.png") no-repeat center center fixed;
-            background-size: cover;
-        }
-        body{
-            width: 100%;
-        }
-        .ursos {
-            display: none;
-            width: 150px;
-            position: absolute;
-            top: 570px;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<title></title>
+
+	<style type="text/css">
+	
+	html, body {
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	body {
+		width: 100%;
+        background: url("cenario.png") no-repeat center center fixed;
+        background-size: cover; 
+	}
+
+	#urso-img {
+		position: fixed;
+        bottom: 160px;
+		width: 80px;		
+	}
+
+	.flip-image {
+ 	 	-webkit-transform: scaleX(-1);
+  		transform: scaleX(-1);
+	}
+	</style>
 </head>
 <body>
-    <img src="urso-1.png" alt="Urso1" class="ursos" id="urso1"/>
-    <img src="urso-2.png" alt="Urso2" class="ursos" id="urso2"/>
-    <img src="urso-3.png" alt="Urso3" class="ursos" id="urso3"/>
+
+<!-- Carregamos todas as imagems primeiramente... assim evita de loading durante a animação. -->
+<img src="urso-1.png" alt="" style="display:none;"/>
+<img src="urso-2.png" alt="" style="display:none;"/>
+<img src="urso-3.png" alt="" style="display:none;"/>
+
+<!-- Carregamos todas as imagems primeiramente... assim evita de loading durante a animação. -->
+<img id="urso-img" alt="Urso Animado" src="urso-1.png"/>
+
+<script type="text/javascript">
+const larguraDaTela = window.screen.availWidth;
+var position = 0;
+var aumentar = true;
+
+var animacaoFrame = 0;
+
+const animacaoUrso = [
+	'urso-1.png',
+	'urso-2.png',
+	'urso-3.png',
+];
+
+function move(event){
+	if(event.key == 'd'){
+		moveRight(event);
+	} else if(event.key == 'a'){
+		moveLeft(event);
+	}
+	else if(event.key == 'w'){
+		jump();
+	}
+};
+
+function moveRight(){
+	
+	if( position > (larguraDaTela + 200) ) {
+		return false;
+	}
+	
+	document.getElementById("urso-img").src = animacaoUrso[animacaoFrame];
+	document.getElementById("urso-img").classList.remove("flip-image");
+	document.getElementById("urso-img").style = "left: " + position + "px;";
+	
+	position +=4;
+	
+	animacaoFrame++;
+	if(animacaoFrame > 2) {
+		animacaoFrame = 0;
+	}
+}
+
+function moveLeft(){
+	
+	if( position < 0 ) {
+		return false;
+	}
+	
+	document.getElementById("urso-img").src = animacaoUrso[animacaoFrame];
+	document.getElementById("urso-img").classList.add("flip-image");
+	document.getElementById("urso-img").style = "left: " + position + "px;";
+	
+	position -=4;
+	
+	animacaoFrame++;
+	if(animacaoFrame > 2) {
+		animacaoFrame = 0;
+	}
+}
+
+function jump(){
+	if (isJumping) {
+		return
+	}
+
+	urso = document.getElementById("urso-img")
+    let upTimerId = setInterval(function () {
+	//funcao que vai aumentar o bottom para o personagem subir, é uma funcão anônima, sem nome
+    //jump down
+	//O bottom ta maior que o padrao que eu coloquei? Se sim eu elimino o setInterval
+		if (bottom > (250 + altura)) {
+			clearInterval(upTimerId)
+			//Se eu cheguei no limite da altura ele vai descer sozinho
+			let downTimerId = setInterval(function () {
+				if (bottom < altura ) {
+					clearInterval(downTimerId)
+					isJumping = false
+				}
+				bottom -= 5
+				bottom = bottom * gravity
+				urso.style.bottom = bottom + 'px'
+			},20)
+		}
+		//jump up
+		isJumping = true
+		bottom +=30
+		bottom = bottom * gravity
+		urso.style.bottom = bottom + 'px'
+    },20)
+}
+
+altura = 264
+bottom = altura
+isJumping = false;
+gravity = 1;
 
 
-    <script type="text/javascript">
-    
-        var urso1 = document.getElementById("urso1");
-        var urso2 = document.getElementById("urso2");
-        var urso3 = document.getElementById("urso3");
 
-        var posicao = 0;
-        var contador = 0;
 
-        function Caminhar(){
-            contador += 1;
-            posicao += 15;
+window.addEventListener('keydown',move);
 
-            if (contador == 1) {
-                urso1.style.display = "block";
-                urso2.style.display = "none";
-                urso3.style.display = "none";
 
-                urso1.style.marginLeft = `${posicao}px`;
-            } else if (contador == 2) {
-                urso1.style.display = "none";
-                urso2.style.display = "block";
-                urso3.style.display = "none";
-
-                urso2.style.marginLeft = `${posicao}px`;
-            } else if (contador == 3) {
-                contador = 0;
-
-                urso1.style.display = "none";
-                urso2.style.display = "none";
-                urso3.style.display = "block";
-
-                urso3.style.marginLeft = `${posicao}px`;
-            }
-            
-        }setInterval(Caminhar, 300);
-
-    </script>
+</script>
 </body>
 </html>
